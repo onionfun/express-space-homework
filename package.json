@@ -1,10 +1,11 @@
 {
   "name": "space-hw",
   "version": "1.0.0",
-  "description": "",
+  "description": "Run <code>npm install</code> to install necessary packages. Run <code>npm test</code> to run automated testing and confirm your assignment meets specs. Follow the directions in server.js",
   "main": "server.js",
   "scripts": {
-    "test": "mocha --exit"
+    "test": "mocha --exit",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -15,8 +16,13 @@
   "dependencies": {
     "chai": "^4.2.0",
     "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "mocha": "^5.2.0",
     "supertest": "^3.3.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {}
 }

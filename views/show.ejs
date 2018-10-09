@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- Make it so you can click on a mission’s name on the index page, and be taken to that mission’s show page-->
+<h1>Missions Show page</h1>
+<% for(let key in mission){ %>
+<p><%=mission[key]%></p>
+<%}%>
+The Mission to mars
+<%= mission.name %>
+<%= mission.launchDate %>
+<%= mission.operator %>
+<%= mission.missionType %>
+
+
+</body>
+</html>

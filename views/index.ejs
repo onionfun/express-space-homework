@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- Make it so you can click on a mission’s name on the index page, and be taken to that mission’s show page-->
+<h1>Missions Index page</h1>
+<%= missions %>
+The Mission to mars
+<ul class="missions">
+<!-- we want to execute javascript with a for loop -->
+
+<% for (let index = 0; index < array.length; index++) { %>
+    <li><%= missions[i].name %></li>
+    
+  <% } %>
+<!--<li><a href ="missions/0">Curiosity</a></li>
+<li><a href ="missions/1">Opportunity</a></li>
+<li><a href ="missions/2">Spirit</a></li>
+<li><a href ="missions/3">Sojourner</a></li>
+<li><a href ="missions/4">Rosetta</a></li> -->
+</ul>
+
+
+</body>
+</html>
